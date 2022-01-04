@@ -1,0 +1,11 @@
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/tests/BaseTest.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/pages/BasePage.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/tests/Test1.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/utils/Browser.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/steps/SearchSteps.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/utils/Utils.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/utils/PropertyReader.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/utils/DriverFactory.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/pages/SearchResultsPage.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/steps/SearchResultSteps.java
+/Users/nataliagordeeva/Documents/gitlocal/LearningAutomation/src/test/java/pages/SearchPage.java
