@@ -41,12 +41,11 @@ public abstract class BasePage {
 
     protected void pasteTextToElementFromClipboard(WebElement element,
                                                 String text) {
-        //copy text to memory buffer
         Toolkit toolkit = Toolkit. getDefaultToolkit();
         Clipboard clipboard = toolkit.getSystemClipboard();
         StringSelection strSelection = new StringSelection(text);
         clipboard.setContents(strSelection, null);
-        //paste it to the field
+       
         element.sendKeys(getCommandCtrlV());
     }
 
