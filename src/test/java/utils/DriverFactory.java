@@ -2,6 +2,7 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
@@ -23,6 +24,10 @@ public class DriverFactory {
             case FIREFOX -> {
                 System.setProperty("webdriver.gecko.driver", DRIVER_PATH + "geckodriver");
                 driver = new FirefoxDriver();
+            }
+            case REMOTE_CHROME -> {
+                System.setProperty("webdriver.chrome.driver", DRIVER_PATH + "chromedriver");
+                driver = new ChromeDriver(new ChromeOptions().setExperimentalOption("debuggerAddress", "172.17.0.1:9222"));
             }
         }
 

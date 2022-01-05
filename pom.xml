@@ -60,7 +60,7 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>AllTests.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                        <reportsDirectory></reportsDirectory>
+                        <reportsDirectory>/var/jenkins_home/workspace/MyTestLearning/target</reportsDirectory>
                     </configuration>
                 </plugin>
             </plugins>

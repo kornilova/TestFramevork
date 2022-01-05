@@ -23,7 +23,6 @@ public abstract class BaseTest {
 
     @BeforeClass
     public void setUp() {
-
         driver = DriverFactory.getDriver(PropertyReader.getBrowser());
         searchSteps = new SearchSteps();
     }

@@ -3,5 +3,6 @@ package utils;
 public enum Browser {
     CHROME,
     FIREFOX,
-    IE
+    IE,
+    REMOTE_CHROME
 }
