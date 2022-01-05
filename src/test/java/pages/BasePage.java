@@ -29,7 +29,7 @@ public abstract class BasePage {
     boolean isElementFound(By by, int timeout) throws InterruptedException {
         List<WebElement> elements = driver.findElements(by);
         for (int i = 0; (i < timeout && elements.size() == 0); i++) {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             elements = driver.findElements(by);
 
         }

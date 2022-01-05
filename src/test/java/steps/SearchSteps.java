@@ -8,8 +8,8 @@ public class SearchSteps {
     private SearchPage searchPage = new SearchPage();
 
     public SearchResultSteps executeSearchByKeyword(String text) throws InterruptedException {
-        searchPage.pasteToSearchField(text);
-        //searchPage.fillSearchField(text);
+        //searchPage.pasteToSearchField(text);
+        searchPage.fillSearchField(text);
         searchPage.clickSearchButtonOrPressEnter();
         Thread.sleep(5000);
         return new SearchResultSteps();
