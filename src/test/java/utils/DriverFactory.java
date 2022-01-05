@@ -45,15 +45,18 @@ public class DriverFactory {
                 System.setProperty("webdriver.gecko.driver", DRIVER_PATH + "geckodriver");
 //                driver = new ChromeDriver(new ChromeOptions().setExperimentalOption("debuggerAddress", "172.17.0.1:9222"));
                 DesiredCapabilities capabilities = new DesiredCapabilities();
+
+                FirefoxProfile profile = new FirefoxProfile();
+                profile.setPreference("intl.accept_languages","en-ua");
+                capabilities.setCapability(FirefoxDriver.PROFILE, profile);
+
                 capabilities.setCapability("browserName", "firefox");
                 capabilities.setCapability("browserVersion", "95.0");
                 capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                         "enableVNC", true,
                         "enableVideo", false
                 ));
-                FirefoxProfile profile = new FirefoxProfile();
-                profile.setPreference("intl.accept_languages","en-ua");
-                capabilities.setCapability(FirefoxDriver.PROFILE,profile.toString());
+
                 try {
                     driver = new RemoteWebDriver(
                             URI.create("http://192.168.31.33:4444/wd/hub").toURL(),
