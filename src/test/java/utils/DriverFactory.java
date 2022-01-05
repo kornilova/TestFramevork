@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
     private static WebDriver driver;
-    private final static String DRIVER_PATH="src/test/resources/";
+    private final static String DRIVER_PATH = "src/test/resources/";
 
     public DriverFactory() {
     }
@@ -17,11 +17,11 @@ public class DriverFactory {
                 return null;
             }
             case CHROME -> {
-                System.setProperty("webdriver.chrome.driver", DRIVER_PATH+"chromedriver");
+                System.setProperty("webdriver.chrome.driver", DRIVER_PATH + "chromedriver");
                 driver = new ChromeDriver();
             }
             case FIREFOX -> {
-                System.setProperty("webdriver.gecko.driver", DRIVER_PATH+"geckodriver");
+                System.setProperty("webdriver.gecko.driver", DRIVER_PATH + "geckodriver");
                 driver = new FirefoxDriver();
             }
         }

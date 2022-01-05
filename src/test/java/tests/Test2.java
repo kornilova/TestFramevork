@@ -13,8 +13,7 @@ public class Test2 extends BaseTest {
     }
 
     @Test
-    public void verifySearchByVoice()
-    {
+    public void verifySearchByVoice() {
         searchSteps.openSearchTooltip()
                 .verifyThatVoiceSearchTooltipContainsText("Search by voice");
     }

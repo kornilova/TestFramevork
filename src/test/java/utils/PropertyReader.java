@@ -15,8 +15,7 @@ public class PropertyReader {
         return Browser.valueOf(getProperty("browser"));
     }
 
-    public static boolean isMaximizeWindow()
-    {
+    public static boolean isMaximizeWindow() {
         return Boolean.valueOf(getProperty("isMaximizeWindow"));
     }
 
