@@ -3,6 +3,7 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -50,6 +51,9 @@ public class DriverFactory {
                         "enableVNC", true,
                         "enableVideo", false
                 ));
+                FirefoxProfile profile = new FirefoxProfile();
+                profile.setPreference("intl.accept_languages","en-ua");
+                capabilities.setCapability(FirefoxDriver.PROFILE,profile.toString());
                 try {
                     driver = new RemoteWebDriver(
                             URI.create("http://192.168.31.33:4444/wd/hub").toURL(),
