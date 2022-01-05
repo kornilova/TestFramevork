@@ -52,7 +52,7 @@ public class DriverFactory {
                 ));
                 try {
                     driver = new RemoteWebDriver(
-                            URI.create("http://172.24.0.2:4444/wd/hub").toURL(),
+                            URI.create("http://192.168.31.33:4444/wd/hub").toURL(),
                             capabilities
                     );
                 } catch (MalformedURLException e) {
