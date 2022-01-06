@@ -1,5 +1,6 @@
 utils/Utils.class
 pages/SearchResultsPage.class
+tests/MainExample.class
 pages/BasePage.class
 tests/Test2.class
 tests/BaseTest.class

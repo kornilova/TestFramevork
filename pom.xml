@@ -6,7 +6,8 @@
 
     <groupId>src.mycompany</groupId>
     <artifactId>TestFramework</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -51,6 +52,7 @@
     <build>
         <pluginManagement>
             <plugins>
+
                 <plugin>
                     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
                     <groupId>org.apache.maven.plugins</groupId>
@@ -60,7 +62,22 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>AllTests.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                        <reportsDirectory>/var/jenkins_home/workspace/MyTestLearning/target/testng-resuls.xml</reportsDirectory>
+                        <reportsDirectory>
+                            /Users/nataliagordeeva/Documents/gitlocal/TestFramework/target/testng-resuls.xml</reportsDirectory>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <mainClass>
+                                    Test2
+                                </mainClass>
+                            </manifest>
+                        </archive>
                     </configuration>
                 </plugin>
             </plugins>
