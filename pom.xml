@@ -60,7 +60,7 @@
                         <suiteXmlFiles>
                             <suiteXmlFile>AllTests.xml</suiteXmlFile>
                         </suiteXmlFiles>
-                        <reportsDirectory>/var/jenkins_home/workspace/MyTestLearning/target</reportsDirectory>
+                        <reportsDirectory>{project.build.directory}/target/testng-resuls.xml</reportsDirectory>
                     </configuration>
                 </plugin>
             </plugins>

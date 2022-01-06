@@ -15,6 +15,16 @@ public class PropertyReader {
         return Browser.valueOf(getProperty("browser"));
     }
 
+    public static String getBrowserVersion()
+    {
+        return getProperty("browserVersion");
+    }
+
+    public static String getBrowserLanguage()
+    {
+        return getProperty("browserLanguage");
+    }
+
     public static boolean isMaximizeWindow() {
         return Boolean.valueOf(getProperty("isMaximizeWindow"));
     }
